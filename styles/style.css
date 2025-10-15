@@ -918,3 +918,21 @@ html {
     outline: 2px solid #ff8243;
     outline-offset: 2px;
 }
+/* Стили для кликабельных ссылок в контактах */
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px dotted transparent;
+}
+
+    .contact-link:hover {
+        color: #ff8243;
+        border-bottom: 1px dotted #ff8243;
+        transform: translateY(-1px);
+    }
+
+.contact-item a.contact-link {
+    display: flex;
+    align-items: center;
+}
