@@ -1,0 +1,920 @@
+﻿/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E0F2F1; /* Мятный фон */
+    color: #5D4037; /* Темно-коричневый текст */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FFDEAD; /* Навахо белый */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Шапка сайта */
+.header {
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 15px;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+}
+
+.student-name {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+    .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.2);
+        font-weight: bold;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+    }
+
+/* Основное содержимое */
+.main-content {
+    padding: 20px;
+}
+
+/* Подвал сайта */
+.footer {
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    color: white;
+    font-weight: 500;
+}
+
+/* Стили для главной страницы */
+
+/* Блок приветствия */
+.welcome-section {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    border-bottom: 1px solid #D7CCC8;
+}
+
+.photo-container {
+    flex: 0 0 160px;
+    margin-right: 25px;
+}
+
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff8243;
+}
+
+.welcome-text h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #5D4037;
+}
+
+.welcome-text p {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.resume-btn {
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 130, 67, 0.3);
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .resume-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(255, 130, 67, 0.4);
+    }
+
+/* Информация о README */
+.readme-info {
+    padding: 8px 15px;
+    background-color: #FFF8E1;
+    border-top: 1px solid #FFD54F;
+    border-bottom: 1px solid #FFD54F;
+    font-size: 0.9em;
+    margin: 20px 0;
+    border-radius: 4px;
+    color: #5D4037;
+}
+
+/* Блок навыков */
+.skills-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #D7CCC8;
+    border-radius: 10px;
+    background-color: #FFF8E1;
+}
+
+    .skills-section h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #5D4037;
+        font-size: 1.6em;
+    }
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    flex: 0 0 130px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.skill-bar {
+    flex: 1;
+    height: 22px;
+    background-color: #E0E0E0;
+    border-radius: 11px;
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    border-radius: 11px;
+    transition: width 1.5s ease-in-out;
+}
+
+.skill-percent {
+    flex: 0 0 45px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Блок проектов на главной */
+.projects-section {
+    padding: 20px;
+    border: 1px solid #D7CCC8;
+    border-radius: 10px;
+    background-color: #FFF8E1;
+    margin-bottom: 20px;
+}
+
+    .projects-section h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #5D4037;
+        font-size: 1.6em;
+    }
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+    .project img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+/* Стили для страницы проектов */
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #D7CCC8;
+}
+
+    .projects-header h2 {
+        color: #5D4037;
+        font-size: 1.8em;
+    }
+
+.projects-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    border: 1px solid #ff8243;
+    background-color: #FFF8E1;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+    .filter-btn.active {
+        background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+        color: white;
+        font-weight: bold;
+    }
+
+    .filter-btn:hover {
+        background-color: #FFECDD;
+    }
+
+.projects-grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 15px;
+}
+
+.project-card {
+    border: 1px solid #D7CCC8;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #FFF8E1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+    .project-card:hover {
+        background-color: #FFECDD;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.project-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #5D4037;
+}
+
+.project-tech {
+    color: #ff8243;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFDEAD;
+    padding: 25px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90%;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D7CCC8;
+}
+
+.modal-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #5D4037;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #5D4037;
+    transition: all 0.3s ease;
+}
+
+    .close-btn:hover {
+        color: #ff8243;
+        transform: scale(1.1);
+    }
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.screenshot {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.modal-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-link {
+    padding: 10px 20px;
+    border: 1px solid #ff8243;
+    background-color: #FFF8E1;
+    text-decoration: none;
+    color: #5D4037;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+    .project-link:hover {
+        background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+        color: white;
+        transform: translateY(-3px);
+    }
+
+/* Стили для страницы учебного дневника */
+.diary-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #D7CCC8;
+    border-radius: 10px;
+    background-color: #FFF8E1;
+}
+
+    .diary-section h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #5D4037;
+        font-size: 1.6em;
+    }
+
+.progress-list {
+    border: 1px solid #D7CCC8;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.progress-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #D7CCC8;
+}
+
+    .progress-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+.progress-date {
+    flex: 0 0 90px;
+    font-weight: bold;
+    color: #5D4037;
+}
+
+.progress-task {
+    flex: 1;
+    font-size: 1.05em;
+}
+
+.progress-status {
+    margin-left: 15px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.status-done {
+    background-color: #FFECDD;
+    color: #E65100;
+}
+
+.status-in-progress {
+    background-color: #FFF3E0;
+    color: #F57C00;
+}
+
+.courses-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #D7CCC8;
+    border-radius: 10px;
+    background-color: #FFF8E1;
+}
+
+    .courses-section h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #5D4037;
+        font-size: 1.6em;
+    }
+
+.course {
+    margin-bottom: 20px;
+}
+
+.course-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #5D4037;
+    font-size: 1.1em;
+}
+
+.course-progress {
+    display: flex;
+    align-items: center;
+}
+
+.course-bar {
+    flex: 1;
+    height: 22px;
+    background-color: #E0E0E0;
+    border-radius: 11px;
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-level {
+    height: 100%;
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    border-radius: 11px;
+    transition: width 1.5s ease-in-out;
+}
+
+.course-percent {
+    flex: 0 0 45px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.add-entry-btn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 130, 67, 0.3);
+}
+
+    .add-entry-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(255, 130, 67, 0.4);
+    }
+
+/* Стили для страницы контактов */
+.contacts-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #D7CCC8;
+    border-radius: 10px;
+    background-color: #FFF8E1;
+}
+
+    .contacts-section h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #5D4037;
+        font-size: 1.6em;
+    }
+
+.contact-form {
+    border: 1px solid #D7CCC8;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #5D4037;
+    }
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D7CCC8;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: #FFF8E1;
+}
+
+    .form-input:focus {
+        outline: none;
+        border-color: #ff8243;
+        box-shadow: 0 0 0 2px rgba(255, 130, 67, 0.2);
+    }
+
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D7CCC8;
+    border-radius: 6px;
+    height: 120px;
+    resize: vertical;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: #FFF8E1;
+    font-family: inherit;
+}
+
+    .form-textarea:focus {
+        outline: none;
+        border-color: #ff8243;
+        box-shadow: 0 0 0 2px rgba(255, 130, 67, 0.2);
+    }
+
+.submit-btn {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff8243, #ff9243); /* Оранжевый градиент */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 130, 67, 0.3);
+}
+
+    .submit-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(255, 130, 67, 0.4);
+    }
+
+.contact-info {
+    border: 1px solid #D7CCC8;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+    .contact-info h3 {
+        margin-bottom: 15px;
+        color: #5D4037;
+        font-size: 1.3em;
+    }
+
+.contact-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    margin-right: 12px;
+    font-weight: bold;
+    color: #ff8243;
+}
+
+/* Дополнительные стили для модального окна добавления записи в дневник */
+.modal-form {
+    margin-top: 15px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+    .form-row label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #5D4037;
+    }
+
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #D7CCC8;
+        border-radius: 6px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #FFF8E1;
+        transition: all 0.3s ease;
+    }
+
+        .form-row input:focus,
+        .form-row select:focus,
+        .form-row textarea:focus {
+            outline: none;
+            border-color: #ff8243;
+            box-shadow: 0 0 0 2px rgba(255, 130, 67, 0.2);
+        }
+
+    .form-row textarea {
+        height: 80px;
+        resize: vertical;
+    }
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    padding: 10px 20px;
+    background-color: #FFF8E1;
+    border: 1px solid #ff8243;
+    color: #ff8243;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    .cancel-btn:hover {
+        background-color: #FFECDD;
+        transform: translateY(-2px);
+    }
+
+.add-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff8243, #ff9243);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(255, 130, 67, 0.3);
+}
+
+    .add-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(255, 130, 67, 0.4);
+    }
+
+/* Стили для уведомлений */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff8243, #ff9243);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Анимация для прогресс-баров */
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+}
+
+.skill-level,
+.course-level {
+    animation: progressAnimation 1.5s ease-in-out;
+}
+
+/* Улучшенные стили для статусов */
+.status-done {
+    background-color: #FFECDD;
+    color: #E65100;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.status-in-progress {
+    background-color: #FFF3E0;
+    color: #F57C00;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Адаптивность для модальных окон */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+    }
+
+    .cancel-btn,
+    .add-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .notification {
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .projects-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projects-filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Стили для placeholder в формах */
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #A1887F;
+    opacity: 0.7;
+}
+
+/* Улучшенные стили для выпадающего списка */
+.form-row select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235D4037' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 35px;
+}
+
+/* Стили для активных состояний */
+.nav-link:active,
+.resume-btn:active,
+.filter-btn:active,
+.project-link:active,
+.submit-btn:active,
+.add-entry-btn:active,
+.cancel-btn:active,
+.add-btn:active {
+    transform: translateY(1px);
+}
+
+/* Плавная прокрутка для всей страницы */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Улучшенные фокус-стили для доступности */
+.nav-link:focus,
+.resume-btn:focus,
+.filter-btn:focus,
+.project-link:focus,
+.submit-btn:focus,
+.add-entry-btn:focus,
+.cancel-btn:focus,
+.add-btn:focus,
+.form-input:focus,
+.form-textarea:focus {
+    outline: 2px solid #ff8243;
+    outline-offset: 2px;
+}

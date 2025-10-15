@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo">⭐DaddyBear⭐</div>
+                <div class="student-name">Мосенц Михаил</div>
+            </div>
+            <nav class="navigation">
+                <a href="../index.html" class="nav-link">[Главная]</a>
+                <a href="projects.html" class="nav-link">[Проекты]</a>
+                <a href="diary.html" class="nav-link">[Дневник]</a>
+                <a href="contacts.html" class="nav-link active">[Контакты]</a>
+            </nav>
+        </header>
+
+        <!-- Основное содержимое -->
+        <main class="main-content">
+
+            <!-- Контактная форма -->
+            <section class="contacts-section">
+                <h2>Свяжитесь со мной</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" class="form-input" placeholder="____________________________">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="form-input" placeholder="____________________________">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" class="form-textarea" placeholder="_______________________________"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">[Отправить сообщение]</button>
+                    </form>
+                </div>
+
+                <!-- Контактная информация -->
+                <div class="contact-info">
+                    <h3>Контакты:</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>student@edu.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>GitHub: username</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Город, Страна</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <p>© 2024 Контакты</p>
+        </footer>
+    </div>
+
+    <script>
+        // Валидация формы
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Простая валидация
+            if (!name || !email || !message) {
+                alert('Пожалуйста, заполните все поля формы');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                alert('Пожалуйста, введите корректный email адрес');
+                return;
+            }
+
+            // Если все проверки пройдены, можно отправить форму
+            alert('Сообщение отправлено!');
+            this.reset();
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+</html>

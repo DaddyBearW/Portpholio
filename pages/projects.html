@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои проекты</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo">⭐DaddyBear⭐</div>
+                <div class="student-name">Мосенц Михаил</div>
+            </div>
+            <nav class="navigation">
+                <a href="../index.html" class="nav-link">[Главная]</a>
+                <a href="projects.html" class="nav-link active">[Проекты]</a>
+                <a href="diary.html" class="nav-link">[Дневник]</a>
+                <a href="contacts.html" class="nav-link">[Контакты]</a>
+            </nav>
+        </header>
+
+        <!-- Основное содержимое -->
+        <main class="main-content">
+            <!-- Заголовок и фильтры -->
+            <div class="projects-header">
+                <h2>Мои проекты</h2>
+                <div class="projects-filters">
+                    <button class="filter-btn active">[Все]</button>
+                    <button class="filter-btn">[HTML]</button>
+                    <button class="filter-btn">[JS]</button>
+                    <button class="filter-btn">[React]</button>
+                </div>
+            </div>
+
+            <!-- Сетка проектов -->
+            <div class="projects-grid-page">
+                <!-- Проект 1 -->
+                <div class="project-card" onclick="openModal('modal1')">
+                    <div class="project-title">Личный сайт</div>
+                    <div class="project-tech">HTML, CSS</div>
+                </div>
+
+                <!-- Проект 2 -->
+                <div class="project-card" onclick="openModal('modal2')">
+                    <div class="project-title">Todo-приложение</div>
+                    <div class="project-tech">JavaScript</div>
+                </div>
+
+                <!-- Проект 3 -->
+                <div class="project-card" onclick="openModal('modal3')">
+                    <div class="project-title">Интернет-магазин</div>
+                    <div class="project-tech">React</div>
+                </div>
+
+                <!-- Проект 4 -->
+                <div class="project-card" onclick="openModal('modal4')">
+                    <div class="project-title">Портфолио</div>
+                    <div class="project-tech">Bootstrap</div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <p>© 2025 Контакты</p>
+        </footer>
+    </div>
+
+    <!-- Модальные окна -->
+    <!-- Модальное окно для проекта 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Личный сайт</div>
+                <button class="close-btn" onclick="closeModal('modal1')">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Полное описание проекта: современный адаптивный личный сайт-портфолио, созданный с использованием HTML и CSS. Сайт включает главную страницу, страницу проектов, учебный дневник и контакты.</p>
+                <div class="screenshot">[СКРИНШОТ 1]</div>
+                <div class="screenshot">[СКРИНШОТ 2]</div>
+                <div class="modal-links">
+                    <a href="#" class="project-link">Живая версия</a>
+                    <a href="#" class="project-link">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для проекта 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Todo-приложение</div>
+                <button class="close-btn" onclick="closeModal('modal2')">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Полное описание проекта: интерактивное приложение для управления задачами, разработанное на чистом JavaScript. Функциональность включает добавление, редактирование, удаление и фильтрацию задач, а также сохранение данных в локальном хранилище.</p>
+                <div class="screenshot">[СКРИНШОТ 1]</div>
+                <div class="screenshot">[СКРИНШОТ 2]</div>
+                <div class="modal-links">
+                    <a href="#" class="project-link">Живая версия</a>
+                    <a href="#" class="project-link">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для проекта 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Интернет-магазин</div>
+                <button class="close-btn" onclick="closeModal('modal3')">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Полное описание проекта: полнофункциональный интернет-магазин, созданный с использованием React. Включает каталог товаров, корзину покупок, систему фильтрации и поиска, а также оформление заказа.</p>
+                <div class="screenshot">[СКРИНШОТ 1]</div>
+                <div class="screenshot">[СКРИНШОТ 2]</div>
+                <div class="modal-links">
+                    <a href="#" class="project-link">Живая версия</a>
+                    <a href="#" class="project-link">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для проекта 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Портфолио</div>
+                <button class="close-btn" onclick="closeModal('modal4')">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Полное описание проекта: адаптивное портфолио, созданное с использованием Bootstrap. Включает галерею проектов, информацию о навыках и контактную форму.</p>
+                <div class="screenshot">[СКРИНШОТ 1]</div>
+                <div class="screenshot">[СКРИНШОТ 2]</div>
+                <div class="modal-links">
+                    <a href="#" class="project-link">Живая версия</a>
+                    <a href="#" class="project-link">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Функции для работы с модальными окнами
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Закрытие модального окна при клике вне его содержимого
+        window.onclick = function (event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target === modals[i]) {
+                    modals[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Фильтрация проектов
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Удаляем активный класс у всех кнопок
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Добавляем активный класс текущей кнопке
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

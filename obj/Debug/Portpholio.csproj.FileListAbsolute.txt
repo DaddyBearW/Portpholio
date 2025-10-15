@@ -1,0 +1,7 @@
+C:\Users\Mosen\Documents\GitHub\Portpholio\bin\TypeScriptHTMLApp1.dll.config
+C:\Users\Mosen\Documents\GitHub\Portpholio\bin\TypeScriptHTMLApp1.dll
+C:\Users\Mosen\Documents\GitHub\Portpholio\bin\TypeScriptHTMLApp1.pdb
+C:\Users\Mosen\Documents\GitHub\Portpholio\obj\Debug\Portpholio.csproj.AssemblyReference.cache
+C:\Users\Mosen\Documents\GitHub\Portpholio\obj\Debug\Portpholio.csproj.CoreCompileInputs.cache
+C:\Users\Mosen\Documents\GitHub\Portpholio\obj\Debug\TypeScriptHTMLApp1.dll
+C:\Users\Mosen\Documents\GitHub\Portpholio\obj\Debug\TypeScriptHTMLApp1.pdb

@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный дневник</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo">⭐DaddyBear⭐</div>
+                <div class="student-name">Мосенц Михаил</div>
+            </div>
+            <nav class="navigation">
+                <a href="../index.html" class="nav-link">[Главная]</a>
+                <a href="projects.html" class="nav-link">[Проекты]</a>
+                <a href="diary.html" class="nav-link active">[Дневник]</a>
+                <a href="contacts.html" class="nav-link">[Контакты]</a>
+            </nav>
+        </header>
+
+        <!-- Основное содержимое -->
+        <main class="main-content">
+            <!-- Блок учебного прогресса -->
+            <section class="diary-section">
+                <h2>Мой учебный прогресс</h2>
+                <div class="progress-list" id="progressList">
+                    <div class="progress-item">
+                        <div class="progress-date">15 дек</div>
+                        <div class="progress-task">Верстка макета сайта</div>
+                        <div class="progress-status status-done">✓</div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-date">10 дек</div>
+                        <div class="progress-task">JavaScript основы</div>
+                        <div class="progress-status status-done">✓</div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-date">05 дек</div>
+                        <div class="progress-task">Работа с формами</div>
+                        <div class="progress-status status-in-progress">in progress</div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-date">01 дек</div>
+                        <div class="progress-task">Адаптивный дизайн</div>
+                        <div class="progress-status status-in-progress">in progress</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Блок текущих курсов -->
+            <section class="courses-section">
+                <h2>Текущие курсы</h2>
+                <div class="course">
+                    <div class="course-name">Веб-разработка</div>
+                    <div class="course-progress">
+                        <div class="course-bar">
+                            <div class="course-level" style="width: 90%;"></div>
+                        </div>
+                        <div class="course-percent">90%</div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-name">JavaScript</div>
+                    <div class="course-progress">
+                        <div class="course-bar">
+                            <div class="course-level" style="width: 70%;"></div>
+                        </div>
+                        <div class="course-percent">70%</div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-name">React</div>
+                    <div class="course-progress">
+                        <div class="course-bar">
+                            <div class="course-level" style="width: 50%;"></div>
+                        </div>
+                        <div class="course-percent">50%</div>
+                    </div>
+                </div>
+                <button class="add-entry-btn" onclick="openAddEntryModal()">[Добавить запись]</button>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <p>© 2025 Контакты</p>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для добавления записи -->
+    <div id="addEntryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Добавить новую запись</div>
+                <button class="close-btn" onclick="closeAddEntryModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="entryForm" class="modal-form">
+                    <div class="form-row">
+                        <label for="entryDate">Дата:</label>
+                        <input type="date" id="entryDate" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="entryTask">Задача:</label>
+                        <input type="text" id="entryTask" placeholder="Введите задачу" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="entryStatus">Статус:</label>
+                        <select id="entryStatus" required>
+                            <option value="in-progress">In progress</option>
+                            <option value="done">Выполнено</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="entryDescription">Описание (необязательно):</label>
+                        <textarea id="entryDescription" placeholder="Дополнительное описание задачи"></textarea>
+                    </div>
+                    <div class="modal-buttons">
+                        <button type="button" class="cancel-btn" onclick="closeAddEntryModal()">Отмена</button>
+                        <button type="submit" class="add-btn">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Функции для работы с модальным окном добавления записи
+        function openAddEntryModal() {
+            document.getElementById('addEntryModal').style.display = 'flex';
+            // Устанавливаем сегодняшнюю дату по умолчанию
+            document.getElementById('entryDate').valueAsDate = new Date();
+        }
+        
+        function closeAddEntryModal() {
+            document.getElementById('addEntryModal').style.display = 'none';
+            document.getElementById('entryForm').reset();
+        }
+        
+        // Обработчик отправки формы
+        document.getElementById('entryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const date = document.getElementById('entryDate').value;
+            const task = document.getElementById('entryTask').value;
+            const status = document.getElementById('entryStatus').value;
+            
+            // Форматируем дату для отображения
+            const formattedDate = formatDate(date);
+            
+            // Создаем новую запись
+            addNewEntry(formattedDate, task, status);
+            
+            // Закрываем модальное окно и сбрасываем форму
+            closeAddEntryModal();
+        });
+        
+        // Функция для форматирования даты
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const day = date.getDate();
+            const month = date.toLocaleString('ru', { month: 'short' });
+            return `${day} ${month}`;
+        }
+        
+        // Функция для добавления новой записи в список
+        function addNewEntry(date, task, status) {
+            const progressList = document.getElementById('progressList');
+            
+            // Создаем элемент записи
+            const newEntry = document.createElement('div');
+            newEntry.className = 'progress-item';
+            
+            // Определяем статус и соответствующий класс
+            const statusClass = status === 'done' ? 'status-done' : 'status-in-progress';
+            const statusSymbol = status === 'done' ? '✓' : 'in progress';
+            
+            // Заполняем содержимое записи
+            newEntry.innerHTML = `
+                <div class="progress-date">${date}</div>
+                <div class="progress-task">${task}</div>
+                <div class="progress-status ${statusClass}">${statusSymbol}</div>
+            `;
+            
+            // Добавляем новую запись в начало списка
+            progressList.insertBefore(newEntry, progressList.firstChild);
+            
+            // Показываем уведомление
+            showNotification('Запись успешно добавлена!');
+        }
+        
+        // Функция для показа уведомления
+        function showNotification(message) {
+            // Создаем элемент уведомления
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.className = 'notification';
+            
+            // Добавляем уведомление на страницу
+            document.body.appendChild(notification);
+            
+            // Удаляем уведомление через 3 секунды
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    if (document.body.contains(notification)) {
+                        document.body.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+        
+        // Закрытие модального окна при клике вне его содержимого
+        window.onclick = function(event) {
+            const modal = document.getElementById('addEntryModal');
+            if (event.target === modal) {
+                closeAddEntryModal();
+            }
+        }
+    </script>
+</body>
+</html>
