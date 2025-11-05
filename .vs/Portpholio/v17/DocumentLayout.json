@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -15,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\contacts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|c:\\users\\mosen\\documents\\github\\portpholio\\pages\\diary.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\diary.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|c:\\users\\mosen\\documents\\github\\portpholio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\diary.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\diary.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,30 +34,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "projects.html",
               "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\projects.html",
               "RelativeDocumentMoniker": "pages\\projects.html",
               "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\projects.html",
               "RelativeToolTip": "pages\\projects.html",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T10:36:06.004Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "contacts.html",
               "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\contacts.html",
               "RelativeDocumentMoniker": "pages\\contacts.html",
               "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\contacts.html",
               "RelativeToolTip": "pages\\contacts.html",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAEIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T10:38:43.44Z",
               "IsPinned": true,
@@ -61,15 +66,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "diary.html",
               "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\diary.html",
               "RelativeDocumentMoniker": "pages\\diary.html",
               "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\diary.html",
               "RelativeToolTip": "pages\\diary.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T10:52:28.178Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css",
+              "RelativeDocumentMoniker": "styles\\style.css",
+              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css",
+              "RelativeToolTip": "styles\\style.css",
+              "ViewState": "AgIAAMQEAAAAAAAAAAAiwNIEAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-15T10:24:25.367Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-15T10:04:38.474Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -87,28 +120,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css",
-              "RelativeDocumentMoniker": "styles\\style.css",
-              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css",
-              "RelativeToolTip": "styles\\style.css",
-              "ViewState": "AgIAAIgDAAAAAAAAAAAswKkDAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-15T10:24:25.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "test.html",
+              "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\test.html",
+              "RelativeDocumentMoniker": "test.html",
+              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\test.html",
+              "RelativeToolTip": "test.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-15T10:04:38.474Z",
+              "WhenOpened": "2025-10-29T09:55:41.331Z",
               "EditorCaption": ""
             }
           ]

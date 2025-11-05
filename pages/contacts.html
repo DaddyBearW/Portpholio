@@ -2,109 +2,251 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Контакты - Портфолио студента</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Шапка сайта -->
+    <div class="page">
+        <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
         <header class="header">
-            <div class="logo-section">
-                <div class="logo">[ЛОГОТИП]</div>
-                <div class="student-name">Имя Студента</div>
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <span class="logo__text">Мосенц М.А. "DaddyBear"</span>
+                    </div>
+                    <nav class="nav" aria-label="Основная навигация">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                            <li class="nav__item"><a href="projects.html" class="nav__link">Проекты</a></li>
+                            <li class="nav__item"><a href="diary.html" class="nav__link">Дневник</a></li>
+                            <li class="nav__item"><a href="contacts.html" class="nav__link active" aria-current="page">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav class="navigation">
-                <a href="../index.html" class="nav-link">[Главная]</a>
-                <a href="projects.html" class="nav-link">[Проекты]</a>
-                <a href="diary.html" class="nav-link">[Дневник]</a>
-                <a href="contacts.html" class="nav-link active">[Контакты]</a>
-            </nav>
         </header>
 
-        <!-- Основное содержимое -->
-        <main class="main-content">
-            <!-- Информация о README -->
-            <div class="readme-info">
-                README.md 2025-10-08
-            </div>
+        <main id="main" class="main">
+            <section class="contacts">
+                <div class="container">
+                    <h1 class="page-title">Свяжитесь со мной</h1>
 
-            <!-- Контактная форма -->
-            <section class="contacts-section">
-                <h2>Свяжитесь со мной</h2>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Имя:</label>
-                            <input type="text" id="name" class="form-input" placeholder="____________________________">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" class="form-input" placeholder="____________________________">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Сообщение:</label>
-                            <textarea id="message" class="form-textarea" placeholder="_______________________________"></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">[Отправить сообщение]</button>
-                    </form>
-                </div>
+                    <div class="contacts__content">
+                        <div class="contact-form">
+                            <form id="contactForm" class="form" novalidate>
+                                <fieldset>
+                                    <legend class="form__legend">Контактная информация</legend>
 
-                <!-- Контактная информация -->
-                <div class="contact-info">
-                    <h3>Контакты:</h3>
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>student@edu.ru</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <!-- ЗАМЕНИТЕ ССЫЛКУ НА ВАШУ -->
-                        <a href="https://github.com/DaddyBearW" target="_blank" class="contact-link">GitHub: DaddyBearW</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <span>Москва , Россия</span>
+                                    <div class="form__group">
+                                        <label for="name" class="form__label">
+                                            Имя:
+                                            <span class="required-indicator" aria-hidden="true">*</span>
+                                            <span class="sr-only">обязательное поле</span>
+                                        </label>
+                                        <input type="text" id="name" name="name" class="form__input"
+                                               required aria-required="true"
+                                               aria-describedby="nameError nameHelp">
+                                        <div class="form__help" id="nameHelp">
+                                            Пожалуйста, введите ваше полное имя
+                                        </div>
+                                        <span class="form__error" id="nameError" role="alert" aria-live="polite"></span>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="email" class="form__label">
+                                            Email:
+                                            <span class="required-indicator" aria-hidden="true">*</span>
+                                            <span class="sr-only">обязательное поле</span>
+                                        </label>
+                                        <input type="email" id="email" name="email" class="form__input"
+                                               required aria-required="true"
+                                               aria-describedby="emailError emailHelp">
+                                        <div class="form__help" id="emailHelp">
+                                            Мы не передаем ваш email третьим лицам
+                                        </div>
+                                        <span class="form__error" id="emailError" role="alert" aria-live="polite"></span>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="message" class="form__label">
+                                            Сообщение:
+                                            <span class="required-indicator" aria-hidden="true">*</span>
+                                            <span class="sr-only">обязательное поле</span>
+                                        </label>
+                                        <textarea id="message" name="message" class="form__textarea" rows="5"
+                                                  required aria-required="true"
+                                                  aria-describedby="messageError messageHelp"></textarea>
+                                        <div class="form__help" id="messageHelp">
+                                            Опишите подробно ваш вопрос или предложение
+                                        </div>
+                                        <span class="form__error" id="messageError" role="alert" aria-live="polite"></span>
+                                    </div>
+                                </fieldset>
+
+                                <div class="form__actions">
+                                    <button type="submit" class="btn btn--primary">
+                                        Отправить сообщение
+                                    </button>
+                                    <button type="reset" class="btn btn--secondary">
+                                        Очистить форму
+                                    </button>
+                                </div>
+
+                                <div class="form__status" id="formStatus" role="alert" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <div class="contact-info">
+                            <h2 class="section-title">Контакты</h2>
+                            <div class="contact-list">
+                                <div class="contact-item">
+                                    <span class="contact-icon" aria-hidden="true">✉️</span>
+                                    <span class="contact-text">student@edu.ru</span>
+                                </div>
+                                <a href="https://github.com/DaddyBearW" class="contact-link"
+                                   target="_blank" rel="noopener noreferrer"
+                                   aria-label="Мой GitHub профиль: DaddyBearW (откроется в новой вкладке)">
+                                    <span class="contact-icon" aria-hidden="true">🔗</span>
+                                    <span class="contact-text">GitHub: DaddyBearW</span>
+                                </a>
+                                <div class="contact-item">
+                                    <span class="contact-icon" aria-hidden="true">📍</span>
+                                    <span class="contact-text">Город, Страна</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Подвал сайта -->
         <footer class="footer">
-            <p>© 2025 Контакты</p>
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__text">© 2025 Контакты</p>
+                </div>
+            </div>
         </footer>
     </div>
 
     <script>
-        // Валидация формы
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-            event.preventDefault();
+        // Улучшенная валидация формы с доступностью
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Простая валидация
-            if (!name || !email || !message) {
-                alert('Пожалуйста, заполните все поля формы');
-                return;
+            // Функция для показа ошибок
+            function showError(input, message) {
+                const errorElement = document.getElementById(input.id + 'Error');
+                errorElement.textContent = message;
+                input.setAttribute('aria-invalid', 'true');
+                input.classList.add('form__input--error');
             }
 
-            if (!isValidEmail(email)) {
-                alert('Пожалуйста, введите корректный email адрес');
-                return;
+            // Функция для очистки ошибок
+            function clearError(input) {
+                const errorElement = document.getElementById(input.id + 'Error');
+                errorElement.textContent = '';
+                input.removeAttribute('aria-invalid');
+                input.classList.remove('form__input--error');
             }
 
-            // Если все проверки пройдены, можно отправить форму
-            alert('Сообщение отправлено!');
-            this.reset();
+            // Валидация в реальном времени
+            const inputs = contactForm.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function () {
+                    validateField(this);
+                });
+
+                input.addEventListener('input', function () {
+                    if (this.getAttribute('aria-invalid') === 'true') {
+                        validateField(this);
+                    }
+                });
+            });
+
+            // Валидация отдельного поля
+            function validateField(field) {
+                clearError(field);
+
+                if (field.required && field.value.trim() === '') {
+                    showError(field, 'Это поле обязательно для заполнения');
+                    return false;
+                }
+
+                if (field.type === 'email' && field.value.trim() !== '') {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value)) {
+                        showError(field, 'Пожалуйста, введите корректный email');
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+
+            // Основная валидация формы
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+                const firstInvalidField = null;
+
+                // Валидация всех полей
+                inputs.forEach(input => {
+                    if (!validateField(input)) {
+                        isValid = false;
+                        if (!firstInvalidField) {
+                            firstInvalidField = input;
+                        }
+                    }
+                });
+
+                if (isValid) {
+                    // Показываем статус успеха
+                    formStatus.textContent = 'Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.';
+                    formStatus.className = 'form__status form__status--success';
+
+                    // Фокусируемся на статусе для скринридеров
+                    formStatus.focus();
+
+                    // Сбрасываем форму через 3 секунды
+                    setTimeout(() => {
+                        contactForm.reset();
+                        formStatus.textContent = '';
+                        formStatus.className = 'form__status';
+                    }, 3000);
+                } else {
+                    // Фокусируемся на первом ошибочном поле
+                    if (firstInvalidField) {
+                        firstInvalidField.focus();
+                    }
+
+                    formStatus.textContent = 'Пожалуйста, исправьте ошибки в форме.';
+                    formStatus.className = 'form__status form__status--error';
+                }
+            });
+
+            // Обработка сброса формы
+            contactForm.addEventListener('reset', function () {
+                inputs.forEach(input => {
+                    clearError(input);
+                });
+                formStatus.textContent = '';
+                formStatus.className = 'form__status';
+            });
+
+            // Добавляем обработку клавиши Escape для сброса фокуса
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    if (document.activeElement && document.activeElement.classList.contains('form__input')) {
+                        document.activeElement.blur();
+                    }
+                }
+            });
         });
-
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
     </script>
 </body>
 </html>

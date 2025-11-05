@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тест цветов</title>
+    <style>
+        :root {
+            --color-primary: #8D8741;
+            --color-secondary: #BC986A;
+            --color-accent: #DAAD86;
+            --color-background: #FBEEC1;
+        }
+
+        body {
+            background: var(--color-background);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .color-test {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #8D8741;
+        }
+
+        .secondary {
+            background: #BC986A;
+        }
+
+        .accent {
+            background: #DAAD86;
+        }
+
+        .background {
+            background: #FBEEC1;
+            color: black;
+            border: 2px solid #8D8741;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест новой цветовой схемы</h1>
+    <div class="color-test">
+        <div class="color-box primary">#8D8741</div>
+        <div class="color-box secondary">#BC986A</div>
+        <div class="color-box accent">#DAAD86</div>
+        <div class="color-box background">#FBEEC1</div>
+    </div>
+    <p>Если вы видите эти цвета, значит CSS загружается корректно.</p>
+</body>
+</html>
