@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|c:\\users\\mosen\\documents\\github\\portpholio\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\contacts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|c:\\users\\mosen\\documents\\github\\portpholio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\diary.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\diary.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|solutionrelative:pages\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}|Portpholio.csproj|C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -38,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "projects.html",
               "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\projects.html",
               "RelativeDocumentMoniker": "pages\\projects.html",
@@ -47,8 +47,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T10:36:06.004Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "pages\\contacts.html",
               "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\contacts.html",
               "RelativeToolTip": "pages\\contacts.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T10:38:43.44Z",
               "IsPinned": true,
@@ -66,7 +65,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "diary.html",
               "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\pages\\diary.html",
               "RelativeDocumentMoniker": "pages\\diary.html",
@@ -84,9 +83,9 @@
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css",
               "RelativeDocumentMoniker": "styles\\style.css",
-              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css",
-              "RelativeToolTip": "styles\\style.css",
-              "ViewState": "AgIAAMQEAAAAAAAAAAAiwNIEAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\styles\\style.css*",
+              "RelativeToolTip": "styles\\style.css*",
+              "ViewState": "AgIAAMkBAAAAAAAAAAAMwO0BAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-15T10:24:25.367Z",
               "IsPinned": true,
@@ -100,7 +99,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\Mosen\\Documents\\GitHub\\Portpholio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T10:04:38.474Z",
               "IsPinned": true,
@@ -128,8 +127,7 @@
               "RelativeToolTip": "test.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-29T09:55:41.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T09:55:41.331Z"
             }
           ]
         }
